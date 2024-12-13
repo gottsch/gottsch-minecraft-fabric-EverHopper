@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "everhopper",
+	"version": "${version}",
+	"name": "EverHopper",
+	"description": "",
+	"authors": [
+		"gottsch"
+	],
+	"contact": {
+		"homepage": "https://www.curseforge.com/minecraft/mc-mods/everhopper",
+		"sources": "https://github.com/gottsch/gottsch-minecraft-fabric-EverHopper"
+	},
+	"license": "GNU GPL v3",
+	"icon": "assets/everhopper/everhopper_logo.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"mod.gottsch.fabric.everhopper.core.EverHopper"
+		],
+		"fabric-datagen": [
+			"mod.gottsch.fabric.everhopper.core.EverHopperDataGenerator"
+		]
+	},
+	"mixins": [
+		"everhopper.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	},
+	"accessWidener" : "everhopper.accesswidener"
+}
